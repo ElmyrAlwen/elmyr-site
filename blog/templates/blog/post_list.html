@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elmyr Site</title>
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          Elmyr Site
+        </div>
+        <span class="fa fa-bars menu-icon"></span>
+
+        <div class="header-right">
+          <a href="#">HOME</a>
+          <!-- <a href="#">GALLERY</a>
+          <a href="#" class="login">BLOG</a> -->
+        </div>
+      </div>
+    </header>
+    <div class="top-wrapper">
+      <div class="container">
+          <h1>WELCOME TO VBI-MAN WEB SITE</h1>
+          <h1>I'M SO HAPPY</h1>
+          <p>エルミアの勉強用の自作サイトです</p>
+          <p>ゆっくりしていってね！</p>
+      </div>
+    </div>
+    <div class="main-contents-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Dive to Elmyr</h2>
+          <a href="https://www.youtube.com/channel/UCcxtutnGL15EgUr5s-j4W4g" class="btn youtube" target="_blank"><span class="fa fa-youtube"></span>Youtube</a>
+          <a href="https://twitter.com/Elmyr_Alwen" class="btn twitter"><span class="fa fa-twitter" target="_blank"></span>Twitter</a>
+        </div>
+        <div class="main-contents">
+          <div class="left-column">
+            <div class="lesson-icon">
+              <h1>News</h1>
+            </div>
+            <p class="text-contents">
+              ようやくサイトを立ち上げました。
+              どんどん改良していきます。
+              近い内にロードマップも追加します。
+            </p>
+          </div>
+          <div class="right-column">
+            <div class="lesson-icon">
+              <a class="twitter-timeline" data-height="512" href="https://twitter.com/Elmyr_Alwen?ref_src=twsrc%5Etfw">Tweets by Elmyr_Alwen</a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="faq-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>あまり聞かれないFAQ</h2>
+        </div>
+        <div class="faq">
+          <ul id="faq-list">
+            <li class="faq-list-item">
+              <h3 class="question">設定？</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>
+                  狼人とダークエルフのハーフ(?)<br>
+                  チビモード：狼人<br>
+                  大人モード：ダークエルフ<br>
+                  頑張って大人モードのアバターも作ります
+                </p>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <h3 class="question">パソコンスペックなど</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>
+                  プロセッサ：i7-6700<br>
+                  メモリ：8GB<br>
+                  グラボ：GeForce1060 6GB<br>
+                  体：<a href="https://twitter.com/Stella_Gate_VT" target="_blank">ステラ・ゲートさん</a>製作
+                  マイク：PCV80U ECM-PCV80U
+                  ボイチェン(?)：VSTHost（reafir - LittleAlterBoy - reaeq)
+                  仮想ミキサー：VoiceMeeter Banana
+                  WEBカメラ：PAPALOOK PA452 Pro
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <p>My goal is to make a living doing what I love. Thank you for visiting my site. Elmyr</p>
+      </div>
+    </footer>
+    <script src="{% static 'script.js' %}"></script>
+  </body>
+</html>
