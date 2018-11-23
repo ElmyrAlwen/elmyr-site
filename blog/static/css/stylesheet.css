@@ -21,6 +21,7 @@ header {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  text-align: left;
 }
 
 /* menu-iconのCSSを貼り付けてください */
@@ -148,7 +149,22 @@ a {
   background-color: #f7f7f7;
   text-align: center;
 }
-
+.blog-contents-wrapper {
+  margin-top:100px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: left;
+}
+.blog-container{
+  max-width: 1170px;
+  width: 100%;
+  padding: 200 15px;
+  margin: 0 auto;
+  text-align: left;
+}
 .heading {
   padding-top: 80px;
   padding-bottom: 50px;

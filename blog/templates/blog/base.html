@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elmyr Site</title>
+    <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          Elmyr Site
+        </div>
+        <span class="fa fa-bars menu-icon"></span>
+
+        <div class="header-right">
+          <a href="{% url 'post_list' %}">HOME</a>
+          <a href="{% url 'post_main' %}">BLOG</a>
+          <!-- <a href="#">GALLERY</a>
+          <a href="#">GALLERY</a>
+          <a href="#" class="login">BLOG</a> -->
+        </div>
+      </div>
+    </header>
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>My goal is to make a living doing what I love. Thank you for visiting my site.</p>
+        <p>Copyright © Elmyr Alwen All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="{% static 'script.js' %}"></script>
+  </body>
+</html>

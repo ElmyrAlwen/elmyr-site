@@ -1,30 +1,5 @@
-<!DOCTYPE html>
-{% load static %}
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elmyr Site</title>
-    <link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
-    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="header-left">
-          Elmyr Site
-        </div>
-        <span class="fa fa-bars menu-icon"></span>
-
-        <div class="header-right">
-          <a href="#">HOME</a>
-          <!-- <a href="#">GALLERY</a>
-          <a href="#" class="login">BLOG</a> -->
-        </div>
-      </div>
-    </header>
+{% extends 'blog/base.html' %}
+{% block content %}
     <div class="top-wrapper">
       <div class="container">
           <h1>WELCOME TO VBI-MAN WEB SITE</h1>
@@ -46,9 +21,14 @@
               <h1>News</h1>
             </div>
             <p class="text-contents">
-              ようやくサイトを立ち上げました。
-              どんどん改良していきます。
-              近い内にロードマップも追加します。
+              2018.11.23 <br>
+              BLOGページを追加しました。<br>
+            </p>
+            <p class="text-contents">
+              2018.11.11 <br>
+              ようやくサイトを立ち上げました。<br>
+              どんどん改良していきます。<br>
+              近い内にロードマップも追加します。<br>
             </p>
           </div>
           <div class="right-column">
@@ -100,11 +80,4 @@
         </div>
       </div>
     </div>
-    <footer>
-      <div class="container">
-        <p>My goal is to make a living doing what I love. Thank you for visiting my site. Elmyr</p>
-      </div>
-    </footer>
-    <script src="{% static 'script.js' %}"></script>
-  </body>
-</html>
+{% endblock %}
