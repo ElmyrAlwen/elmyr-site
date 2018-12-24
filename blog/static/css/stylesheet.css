@@ -207,6 +207,9 @@ a {
 .heading h3 {
   font-weight: normal;
 }
+.comment{
+    margin:20px 0px 20px 20px;
+}
 /*faq wrapper*/
 .faq-wrapper {
   background-color: #e6ecf0;
